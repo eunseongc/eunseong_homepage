@@ -9,19 +9,14 @@ body {
     padding-bottom: 25px;
 }
 
-.container-wrapper {
-    position: relative;
-    max-width: 900px;
-    margin: auto;
-}
-
 .container {
-    max-width: 900px;
-    margin: auto;
-    background-color: white;
-    padding: 40px;
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative; /* 🔑 이거 있어야 내부에서 절대 위치 가능 */
+  max-width: 850px;
+  margin: auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .profile-img {
@@ -137,30 +132,18 @@ a:hover {
     margin: 30px 0;
 }
 
-/* .theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    z-index: 1000;
-    transition: transform 0.2s;
-} */
-
-
+/* 🌙 토글 버튼 */
 .theme-toggle {
     position: absolute;
-    top: -40px; /* container 위 여백 조정 */
-    right: 0;   /* container 기준 오른쪽 정렬 */
+    top: 20px;     /* container 내부 위쪽 여백 */
+    right: 20px;   /* container 내부 오른쪽 여백 */
     background: none;
     border: none;
     font-size: 1.5em;
     cursor: pointer;
     z-index: 10;
-}
-
+  }
+  
 .theme-toggle:hover {
     transform: scale(1.1);
 }
@@ -216,12 +199,9 @@ a:hover {
         font-size: 1.2em;
     }
 
-    .background {
-        padding-top: 60px;
-    }
-
     .theme-toggle {
-        font-size: 1.6em;
-        top: -40px;
-    }
+        font-size: 2em;
+        top: 15px;
+        right: 15px;
+      }
 }
