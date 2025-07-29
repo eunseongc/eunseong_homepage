@@ -11,12 +11,12 @@ body {
 
 .container-wrapper {
     position: relative;
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
 }
 
 .container {
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
     background-color: white;
     padding: 40px;
