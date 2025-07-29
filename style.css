@@ -207,9 +207,21 @@ a:hover {
     background-color: #555;
 }
 
+.social-icons i {
+    font-size: 1.2em; /* 기본 데스크탑용 */
+}
 
 @media (max-width: 600px) {
     .social-icons i {
-        font-size: 1.8em !important;
+        font-size: 1.2em;
+    }
+
+    .background {
+        padding-top: 60px;
+    }
+
+    .theme-toggle {
+        font-size: 1.6em;
+        top: -40px;
     }
 }
