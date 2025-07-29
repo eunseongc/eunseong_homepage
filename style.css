@@ -4,7 +4,7 @@ body {
 }
 
 .background {
-    background-color: #546958; /* 연한 초록 계열 배경 */
+    background-color: #546958;
     padding: 25px 0;
 }
 
@@ -53,6 +53,14 @@ p {
     text-decoration: underline;
 }
 
+
+.pub-header {
+    text-align: left;
+    color: #2d5a3e;
+    margin-top: 0; /* remove any gap above */
+}
+
+
 .pub-category {
     font-size: 1.2em;
     margin-top: 40px;
@@ -69,3 +77,48 @@ p {
     margin-bottom: 25px;
     line-height: 1.6;
 }
+
+a {
+    color: #546958; /* Light greenish that contrasts well with #546958 background */
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.new-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #f1de6e, #2c923d);
+    color: white;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-left: 8px;
+    box-shadow: 0 0 8px rgba(42, 143, 64, 0.6);
+    animation: shimmer 1.8s infinite;
+    white-space: nowrap;
+}
+
+@keyframes shimmer {
+    0% {
+        box-shadow: 0 0 8px rgba(136, 172, 53, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 12px rgb(80, 107, 143);
+    }
+    100% {
+        box-shadow: 0 0 8px rgba(43, 121, 36, 0.6);
+    }
+}
+
+.fancy-line {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #2d5a3e, #91c191, #2d5a3e);
+    margin: 30px 0 10px 0; /* top | right | bottom | left */
+    opacity: 0.7;
+    border-radius: 2px;
+}
+
