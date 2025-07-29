@@ -206,3 +206,15 @@ a:hover {
 .dark-mode hr.subtle-line {
     background-color: #555;
 }
+
+/* General icon size */
+.social-icons i {
+    font-size: 1.3em;
+}
+
+/* Larger icons for small screens */
+@media (max-width: 600px) {
+    .social-icons i {
+        font-size: 1.8em;
+    }
+}
