@@ -5,7 +5,14 @@ body {
 
 .background {
     background-color: #546958;
-    padding: 25px 0;
+    padding-top: 40px; /* 충분히 여백 확보 */
+    padding-bottom: 25px;
+}
+
+.container-wrapper {
+    position: relative;
+    max-width: 850px;
+    margin: auto;
 }
 
 .container {
@@ -130,7 +137,7 @@ a:hover {
     margin: 30px 0;
 }
 
-.theme-toggle {
+/* .theme-toggle {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -140,6 +147,18 @@ a:hover {
     cursor: pointer;
     z-index: 1000;
     transition: transform 0.2s;
+} */
+
+
+.theme-toggle {
+    position: absolute;
+    top: -40px; /* container 위 여백 조정 */
+    right: 0;   /* container 기준 오른쪽 정렬 */
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 10;
 }
 
 .theme-toggle:hover {
