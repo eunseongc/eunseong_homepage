@@ -79,8 +79,8 @@ p {
 }
 
 a {
-    color: #546958; /* Light greenish that contrasts well with #546958 background */
-    text-decoration: underline;
+    color: #546958; /* greenish that contrasts well with #546958 background */
+    font-weight: bold;
 }
 
 a:hover {
@@ -103,13 +103,13 @@ a:hover {
 
 @keyframes shimmer {
     0% {
-        box-shadow: 0 0 8px rgba(136, 172, 53, 0.6);
+        box-shadow: 0 0 8px rgba(241, 222, 110, 0.5);  /* light gold */
     }
     50% {
-        box-shadow: 0 0 12px rgb(80, 107, 143);
+        box-shadow: 0 0 12px rgba(44, 146, 61, 1);     /* forest green */
     }
     100% {
-        box-shadow: 0 0 8px rgba(43, 121, 36, 0.6);
+        box-shadow: 0 0 8px rgba(255, 241, 150, 0.6);  /* pale yellow */
     }
 }
 
@@ -122,3 +122,10 @@ a:hover {
     border-radius: 2px;
 }
 
+.subtle-line {
+    border: none;
+    height: 1px;
+    background-color: #d6e4d1; /* soft green-gray */
+    opacity: 0.4;
+    margin: 30px 0;
+}
