@@ -129,3 +129,61 @@ a:hover {
     opacity: 0.4;
     margin: 30px 0;
 }
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.2s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.dark-mode .background {
+    background-color: #121212;
+}
+
+.dark-mode .container {
+    background-color: #222;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode .pub-category {
+    color: #a4f0c1;
+}
+
+.dark-mode .links a {
+    color: #80d8ff;
+}
+
+.dark-mode .links a:hover {
+    color: #ffee58;
+}
+
+.dark-mode .new-badge {
+    background: linear-gradient(135deg, #ffeb3b, #8bc34a);
+    color: #000;
+    box-shadow: 0 0 8px rgba(255, 235, 59, 0.6);
+}
+
+.dark-mode hr.fancy-line {
+    background: linear-gradient(to right, #444, #888, #444);
+}
+
+.dark-mode hr.subtle-line {
+    background-color: #555;
+}
