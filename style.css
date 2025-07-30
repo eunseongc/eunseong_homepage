@@ -194,13 +194,13 @@ a:hover {
     font-size: 1.2em; /* 기본 데스크탑용 */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .social-icons i {
         font-size: 1.2em;
     }
 
     .theme-toggle {
-        font-size: 2em;
+        font-size: 1.5em;
         top: 15px;
         right: 15px;
       }
