@@ -193,6 +193,13 @@ a:hover {
     font-size: 1.0em; /* 기본 데스크탑용 */
 }
 
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #fdfdfd;
+}
+
 @media (max-width: 768px) {
     .social-icons i {
         font-size: 1.2em;
