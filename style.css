@@ -190,7 +190,7 @@ a:hover {
 }
 
 .social-icons i {
-    font-size: 1.2em; /* 기본 데스크탑용 */
+    font-size: 1.0em; /* 기본 데스크탑용 */
 }
 
 @media (max-width: 768px) {
