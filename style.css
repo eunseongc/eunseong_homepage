@@ -26,6 +26,14 @@ body {
     margin: auto;
 }
 
+.responsive-name {
+    white-space: nowrap;
+}
+  
+.korean-name {
+    display: inline;
+}
+
 h1, h2 {
     text-align: center;
     color: #2d5a3e;
@@ -209,5 +217,15 @@ a:hover {
         font-size: 1.5em;
         top: 15px;
         right: 15px;
-      }
+    }
+
+    .responsive-name {
+        white-space: normal;
+    }
+    
+    .korean-name {
+        display: block;
+        margin-top: 0.2em;
+        font-size: 0.95em; /* optional: 조금 작게 */
+    }
 }
