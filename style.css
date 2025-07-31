@@ -32,6 +32,7 @@ body {
   
 .korean-name {
     display: inline;
+    font-size: 0.8em;
 }
 
 h1, h2 {
@@ -226,6 +227,6 @@ a:hover {
     .korean-name {
         display: block;
         margin-top: 0.2em;
-        font-size: 0.95em; /* optional: 조금 작게 */
+        font-size: 0.8em; /* optional: 조금 작게 */
     }
 }
