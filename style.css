@@ -95,6 +95,17 @@ p {
     line-height: 1.6;
 }
 
+.compact-list li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.award-money {
+    color: gray;
+    font-size: 0.95em;
+}
+
+
 a {
     color: #546958; /* greenish that contrasts well with #546958 background */
     font-weight: bold;
