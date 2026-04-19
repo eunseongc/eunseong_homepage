@@ -1,16 +1,32 @@
-console.log("Welcome to Eunseong's Homepage!");
+// Theme toggle
 const toggleBtn = document.getElementById('theme-toggle');
-const body = document.body;
+const root = document.documentElement;
 
-// Load theme from localStorage
 if (localStorage.getItem('theme') === 'dark') {
-    body.classList.add('dark-mode');
+    root.setAttribute('data-theme', 'dark');
     toggleBtn.textContent = '☀️';
 }
 
 toggleBtn.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    const isDark = body.classList.contains('dark-mode');
-    toggleBtn.textContent = isDark ? '☀️' : '🌙';
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+        root.removeAttribute('data-theme');
+        toggleBtn.textContent = '🌙';
+        localStorage.setItem('theme', 'light');
+    } else {
+        root.setAttribute('data-theme', 'dark');
+        toggleBtn.textContent = '☀️';
+        localStorage.setItem('theme', 'dark');
+    }
 });
+
+// Scroll fade-in
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-section').forEach(el => observer.observe(el));
